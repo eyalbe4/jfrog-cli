@@ -15,9 +15,9 @@ jobs:
         - run: go version
         - name: test
           run: |
-            git clone https://github.com/jfrog/jfrog-cli.git
+            git clone https://github.com/eyalbe4/jfrog-cli.git
             cd jfrog-cli
-            git checkout dev
-            go test -v github.com\jfrog\jfrog-cli --test.artifactory=true --rt.url=https://ecosysjfrog.jfrog.io/artifactory/ --rt.user=eyalb --rt.password=AKCp5cckSN7LGLkQAmkWyMwqPSwesLJvjamxKQtzLfHTg6NJiSzxABdHLeMpiC2crZ2ECR9Za --timeout 0
+            git checkout test-win
+            go test -v github.com\jfrog\jfrog-cli --test.artifactory=true --rt.url=https://ecosysjfrog.jfrog.io/artifactory/ --rt.user=eyalb --rt.password=AKCp5cckSN7LGLkQAmkWyMwqPSwesLJvjamxKQtzLfHTg6NJiSzxABdHLeMpiC2crZ2ECR9Za --timeout 0 -run TestArtifactoryDownloadFromVirtual
             dir out -R
 
