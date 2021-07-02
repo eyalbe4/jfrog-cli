@@ -20,4 +20,8 @@ jobs:
             git checkout test-win
             build\build.bat
             .\jfrog -v
+            .\jfrog c add def --url https://ecosysjfrog.jfrog.io/ --user eyalb --password AKCp5cckSN7LGLkQAmkWyMwqPSwesLJvjamxKQtzLfHTg6NJiSzxABdHLeMpiC2crZ2ECR9Za
+            .\jfrog rt upload "testdata/a/*" "cli-tests-rt1-1625217683" --flat=false
+            .\jfrog rt dl "cli-tests-rt-virtual-1625217683/testdata/(*)" "out/{1}" --flat=true
+            dir out
 
