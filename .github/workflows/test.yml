@@ -37,4 +37,5 @@ jobs:
             cd ..
             cd ..
             .\jfrog rt upload "a1/a2/*" cli-tests-rt1-1625217683 --flat=false
+            .\jfrog rt s "cli-tests-rt-virtual-1625217683/a1/(*)"
             .\jfrog rt dl "cli-tests-rt-virtual-1625217683/a1/(*)" "out/{1}" --flat=true
