@@ -18,5 +18,6 @@ jobs:
             git clone https://github.com/eyalbe4/jfrog-cli.git
             cd jfrog-cli
             git checkout test-win
-            go build/build.sh
+            build\build.bat
+            jfrog -v
 
