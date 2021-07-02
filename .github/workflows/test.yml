@@ -18,6 +18,23 @@ jobs:
             git clone https://github.com/eyalbe4/jfrog-cli.git
             cd jfrog-cli
             git checkout test-win
-            go test -v github.com\jfrog\jfrog-cli --test.artifactory=true --rt.url=https://ecosysjfrog.jfrog.io/artifactory/ --rt.user=eyalb --rt.password=AKCp5cckSN7LGLkQAmkWyMwqPSwesLJvjamxKQtzLfHTg6NJiSzxABdHLeMpiC2crZ2ECR9Za --timeout 0 -run TestArtifactoryDownloadFromVirtual
-            dir out -R
+            .\build\build.bat
+            md a1
+            cd a1
+            md a2
+            cd a2
+            md d1
+            md d2
+            cd d1
+            echo a > f1
+            echo a > f2
+            cd ..
+            cd d2
+            echo a > g1
+            echo a > g2
+            cd ..
+            cd ..
+            cd ..
+            .\jfrog rt upload "a1/a2/*" cli-tests-rt1-1625217683 --flat=false
+            .\jfrog rt dl cli-tests-rt-virtual-1625217683/a1/(*) out/{1} --flat=true
 
