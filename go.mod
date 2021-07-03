@@ -23,7 +23,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-replace github.com/jfrog/jfrog-client-go => github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703070938-614bf27dfeeb
+replace github.com/jfrog/jfrog-client-go => github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703072645-5a655a8ea914
 
 // replace github.com/jfrog/jfrog-client-go => /Users/eyalb/dev/forks/jfrog-client-go
 
