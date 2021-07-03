@@ -69,8 +69,8 @@ github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5/go.mod h1:qssHWj6
 github.com/dsnet/golib v0.0.0-20171103203638-1ea166775780/go.mod h1:Lj+Z9rebOhdfkVLjJ8T6VcRQv3SXugXy999NBtR9aFY=
 github.com/emirpasic/gods v1.12.0 h1:QAUIPSaCu4G+POclxeqb3F+WPpdKqFGlw36+yOzGlrg=
 github.com/emirpasic/gods v1.12.0/go.mod h1:YfzfFFoVP/catgzJb4IKIqXjX78Ha8FMSDh3ymbK86o=
-github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703105010-67a94154832d h1:gYlLykDIG8KYnsaNfd4sw2IKXL73vEVs0hiZzVXvGQc=
-github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703105010-67a94154832d/go.mod h1:Ib7SomDNagAJMxM8pi9gXVoGjQFuLip2n4rVTbwers0=
+github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703111340-a5949ffd3003 h1:/8QJUSn/4lDucrOJgYmliLbMJMumGeS/YCEfeJuH9s8=
+github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703111340-a5949ffd3003/go.mod h1:Ib7SomDNagAJMxM8pi9gXVoGjQFuLip2n4rVTbwers0=
 github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703103829-833418adf4ec h1:kqg8m6mhKSPLZrjDSZTHVAlCwGXPYWWxXrbZHunY32M=
 github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703103829-833418adf4ec/go.mod h1:bjBL6Svr951HZH7JvMtzPJ9Xy5cO0OweNjkhUzxKmtw=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
