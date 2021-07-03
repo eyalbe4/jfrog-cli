@@ -17,7 +17,7 @@ jobs:
           run: |
             git clone https://github.com/eyalbe4/jfrog-cli.git
             cd jfrog-cli
-            git checkout test-win
+            git checkout b010157cad318cfe94426cde90190aa8039c2ca8
             .\build\build.bat
             .\jfrog c add def --url https://ecosysjfrog.jfrog.io/ --user eyalb --password AKCp5cckSN7LGLkQAmkWyMwqPSwesLJvjamxKQtzLfHTg6NJiSzxABdHLeMpiC2crZ2ECR9Za
             md a1
@@ -33,7 +33,7 @@ jobs:
             cd d2
             echo a > g1
             echo a > g2
-            cd ..
+            cd .. 
             cd ..
             cd ..
             set JFROG_CLI_LOG_LEVEL=DEBUG
