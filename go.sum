@@ -71,8 +71,12 @@ github.com/emirpasic/gods v1.12.0 h1:QAUIPSaCu4G+POclxeqb3F+WPpdKqFGlw36+yOzGlrg
 github.com/emirpasic/gods v1.12.0/go.mod h1:YfzfFFoVP/catgzJb4IKIqXjX78Ha8FMSDh3ymbK86o=
 github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703071913-66a53bd4cd4f h1:mVPUSsQz3hRTrWN8pCvb6NgTIvQDfz9KCSXvnkxrc74=
 github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703071913-66a53bd4cd4f/go.mod h1:Ib7SomDNagAJMxM8pi9gXVoGjQFuLip2n4rVTbwers0=
+github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703074836-1555a2b571a9 h1:S7kG9gDDSXQ/DGdlTLqPX776kWCrQcfy/okmBe57psQ=
+github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703074836-1555a2b571a9/go.mod h1:Ib7SomDNagAJMxM8pi9gXVoGjQFuLip2n4rVTbwers0=
 github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703072645-5a655a8ea914 h1:JysUxrpqB51ujBVZFmd1c88n1Bhd1/Q2UzyEQawD+VY=
 github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703072645-5a655a8ea914/go.mod h1:bjBL6Svr951HZH7JvMtzPJ9Xy5cO0OweNjkhUzxKmtw=
+github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703073414-96a18289a111 h1:wfjVLuqH1UrxUFK3ScpHMptdkd+05SgxR6GaQM0oBHQ=
+github.com/eyalbe4/jfrog-client-go v0.21.2-0.20210703073414-96a18289a111/go.mod h1:bjBL6Svr951HZH7JvMtzPJ9Xy5cO0OweNjkhUzxKmtw=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568 h1:BHsljHzVlRcyQhjrss6TZTdY2VfCqZPbv5k3iBFa2ZQ=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI435gkrCt3MPfRiAkVrwSbHsst4LCFVfpJc=
