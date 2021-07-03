@@ -27,7 +27,7 @@ replace github.com/jfrog/jfrog-client-go => github.com/eyalbe4/jfrog-client-go v
 
 // replace github.com/jfrog/jfrog-client-go => /Users/eyalb/dev/forks/jfrog-client-go
 
-replace github.com/jfrog/jfrog-cli-core => github.com/jfrog/jfrog-cli-core v1.8.1-0.20210701165812-1d0a437d745f
+replace github.com/jfrog/jfrog-cli-core => github.com/eyalbe4/jfrog-cli-core v1.3.2-0.20210703105010-67a94154832d
 
 replace github.com/jfrog/gocmd => github.com/jfrog/gocmd v0.3.2-0.20210630160330-e50a3fc43015
 
