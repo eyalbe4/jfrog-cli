@@ -41,3 +41,4 @@ jobs:
             .\jfrog rt s "cli-tests-rt-virtual-1625217683/a1/(*)"
             .\jfrog rt s "cli-tests-rt-virtual-1625217683/a1/*"
             .\jfrog rt dl "cli-tests-rt-virtual-1625217683/a1/(*)" "out/{1}" --flat=true
+            .\jfrog rt dl "cli-tests-rt-virtual-1625217683/a1/*" "out/" --flat=true
