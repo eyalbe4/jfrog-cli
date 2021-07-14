@@ -179,7 +179,7 @@ def pushDockerImageVersionAndRelease(name, version) {
                 echo "11 docker tag $name:$version $name:latest"
                 docker tag $name:$version $name:latest
                 echo "11 builder/jfrog rt docker-push $name:latest reg2"
-                builder/jfrog rt docker-push $name:latest reg2 $options > cmd.out
+                builder/jfrog rt docker-push $name:latest reg2 $options > cmd.out 2 > cmd.out
             """
         } catch (exc) {
             sh 'echo 111111111'
