@@ -172,14 +172,19 @@ def buildDockerImage(name, version, dockerFile, jfrogCliRepoDir) {
 def pushDockerImageVersionAndRelease(name, version) {
     withCredentials([string(credentialsId: 'jfrog-cli-automation', variable: 'JFROG_CLI_AUTOMATION_ACCESS_TOKEN')]) {
         options = "--url https://releases.jfrog.io/artifactory --access-token=$JFROG_CLI_AUTOMATION_ACCESS_TOKEN"
-        sh """#!/bin/bash
-            echo "11 builder/jfrog rt docker-push $name:$version reg2"
-            builder/jfrog rt docker-push $name:$version reg2 $options
-            echo "11 docker tag $name:$version $name:latest"
-            docker tag $name:$version $name:latest
-            echo "11 builder/jfrog rt docker-push $name:latest reg2"
-            builder/jfrog rt docker-push $name:latest reg2 $options
-        """
+        try {
+            sh """#!/bin/bash
+                echo "11 builder/jfrog rt docker-push $name:$version reg2"
+                builder/jfrog rt docker-push $name:$version reg2 $options
+                echo "11 docker tag $name:$version $name:latest"
+                docker tag $name:$version $name:latest
+                echo "11 builder/jfrog rt docker-push $name:latest reg2"
+                builder/jfrog rt docker-push $name:latest reg2 $options > cmd.out
+            """
+        } catch (exc) {
+            sh 'echo 111111111'
+            sh 'cat cmd.out'
+        }
     }
 }
 
