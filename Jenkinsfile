@@ -153,7 +153,7 @@ def buildPublishDockerImages(version, jfrogCliRepoDir) {
             def newName = currentImage.names[n]
             // Create new tag.
             sh """#!/bin/bash
-                println "** docker tag $primaryName:$version $newName:$version"
+                echo "11 docker tag $primaryName:$version $newName:$version"
                 docker tag $primaryName:$version $newName:$version
             """
             pushDockerImageVersionAndRelease(newName, version)
@@ -173,11 +173,11 @@ def pushDockerImageVersionAndRelease(name, version) {
     withCredentials([string(credentialsId: 'jfrog-cli-automation', variable: 'JFROG_CLI_AUTOMATION_ACCESS_TOKEN')]) {
         options = "--url https://releases.jfrog.io/artifactory --access-token=$JFROG_CLI_AUTOMATION_ACCESS_TOKEN"
         sh """#!/bin/bash
-            println "** builder/jfrog rt docker-push $name:$version reg2"
+            echo "11 builder/jfrog rt docker-push $name:$version reg2"
             builder/jfrog rt docker-push $name:$version reg2 $options
-            println "** docker tag $name:$version $name:latest"
+            echo "11 docker tag $name:$version $name:latest"
             docker tag $name:$version $name:latest
-            println "** builder/jfrog rt docker-push $name:latest reg2"
+            echo "11 builder/jfrog rt docker-push $name:latest reg2"
             builder/jfrog rt docker-push $name:latest reg2 $options
         """
     }
